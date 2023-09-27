@@ -8,6 +8,7 @@ h1 {
 .main-content {
     height: 100px;
     background-color: #ff9800;
+    border-bottom: 10px solid black;
 }
 
 .logo {

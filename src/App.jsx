@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 import { Card } from '../components/Card'
 import { NavBar } from '../components/NavBar.jsx'
@@ -11,9 +10,7 @@ function App() {
       <div>
         <NavBar />
       </div>
-      <div className='cards-container'>
-        <Card />
-      </div>
+      <Card />
 
     </div>
   )

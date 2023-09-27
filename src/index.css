@@ -12,3 +12,10 @@ body {
   flex-direction: column;
   gap: 50px;
 }
+
+.cards-container {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  gap: 10px;
+}

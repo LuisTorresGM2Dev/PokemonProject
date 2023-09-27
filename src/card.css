@@ -25,12 +25,9 @@
 
 }
 
-.cards-container {
-    justify-content: center;
-    display: grid;
-    grid-template-columns: repeat(4, 300px);
-    gap: 10px;
-}
+
+
+
 
 .structure-card:hover {
     background-color: #ff9800;
