@@ -15,6 +15,21 @@
     justify-content: center;
 }
 
+.search-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 70%;
+    height: 50px;
+    border-radius: 40px;
+    outline: none;
+    background-color: #ff9800;
+}
+
 .pokemons-name {
     text-transform: capitalize;
     font-size: 25px;
@@ -24,10 +39,6 @@
     font-family: 'Pokemon Solid', sans-serif;
 
 }
-
-
-
-
 
 .structure-card:hover {
     background-color: #ff9800;

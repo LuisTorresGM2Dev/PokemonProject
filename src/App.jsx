@@ -11,7 +11,6 @@ function App() {
         <NavBar />
       </div>
       <Card />
-
     </div>
   )
 }

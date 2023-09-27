@@ -30,12 +30,15 @@ function Card() {
 
     return (
         <>
-            <input
-                type="text"
-                placeholder="Buscar Pokémon por nombre"
-                value={searchTerm}
-                onChange={handleSearchChange}
-            />
+            <div className="search-box">
+                <input
+                    type="text"
+                    placeholder="Buscar Pokémon por nombre"
+                    value={searchTerm}
+                    onChange={handleSearchChange}
+                />
+            </div>
+
             <div className='cards-container'>
                 {filteredPokemon.map((pokemon) => {
                     const pokemonId = pokemon.url.split("/")[6];
