@@ -1,0 +1,14 @@
+:root {
+  background-color: #FFFFFF;
+}
+
+body {
+  margin: 0px;
+  margin-bottom: 50px;
+}
+
+.all-content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
