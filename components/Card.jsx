@@ -1,5 +1,5 @@
-import React, { useEffect, useState, useContext } from "react";
-import "../src/card.css";
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 function Card() {
     const [pokemonData, setPokemonData] = useState([]);
@@ -39,28 +39,28 @@ function Card() {
                 />
             </div>
 
-            <div className='cards-container'>
+            <div className="cards-container">
                 {filteredPokemon.map((pokemon) => {
                     const pokemonId = pokemon.url.split("/")[6];
                     return (
                         <div className="structure-card" key={pokemonId}>
-                            <div>
-                                <img
-                                    className="pokemon-img"
-                                    src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemonId}.png`}
-                                    alt={pokemon.name}
-                                />
-                            </div>
-                            <div>
-                                <h2 className="pokemons-name">{pokemon.name}</h2>
-                            </div>
+                            <Link to={`/moreinfo/${pokemonId}`}>
+                                <div>
+                                    <img
+                                        className="pokemon-img"
+                                        src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemonId}.png`}
+                                        alt={pokemon.name}
+                                    />
+                                </div>
+                                <div>
+                                    <h2 className="pokemons-name">{pokemon.name}</h2>
+                                </div>
+                            </Link>
                         </div>
                     );
                 })}
             </div>
-
         </>
-
     );
 }
 

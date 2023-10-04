@@ -1,20 +1,17 @@
-import './App.css'
-import { Card } from '../components/Card'
-import { NavBar } from '../components/NavBar.jsx'
-import { MoreInfo } from '../components/Moreinfo'
-import "../src/card.css"
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Card from "./Card.jsx";
+import MoreInfo from "./mainContext.jsx";
 
 function App() {
-
   return (
-    <div className='all-content'>
-      <div>
-        <NavBar />
-      </div>
-      <MoreInfo />
-      <Card />
-    </div>
-  )
+    <Router>
+      <Switch>
+        <Route path="/" exact component={Card} />
+        <Route path="/moreinfo/:pokemonId" component={MoreInfo} />
+      </Switch>
+    </Router>
+  );
 }
 
-export default App
+export default App;
