@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import "../src/card.css";
 
 function Card() {
@@ -6,7 +6,7 @@ function Card() {
     const [searchTerm, setSearchTerm] = useState("");
     const [filteredPokemon, setFilteredPokemon] = useState([]);
 
-    const pokemonApi = "https://pokeapi.co/api/v2/pokemon/?limit=152";
+    const pokemonApi = "https://pokeapi.co/api/v2/pokemon/?limit=1010";
 
     useEffect(() => {
         fetch(pokemonApi)

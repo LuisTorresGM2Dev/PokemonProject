@@ -1,6 +1,7 @@
 import './App.css'
 import { Card } from '../components/Card'
 import { NavBar } from '../components/NavBar.jsx'
+import { MoreInfo } from '../components/Moreinfo'
 import "../src/card.css"
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <div>
         <NavBar />
       </div>
+      <MoreInfo />
       <Card />
     </div>
   )

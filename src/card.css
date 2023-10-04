@@ -6,6 +6,8 @@
     align-items: center;
     border-radius: 10px;
     transition: all 1s;
+    margin: 10px;
+
 }
 
 .pokemon-img {
@@ -25,21 +27,61 @@
 input {
     width: 70%;
     height: 50px;
+    padding: 15px;
+    border: transparent;
     border-radius: 40px;
     outline: none;
     background-color: #ff9800;
+    color: white;
+}
+
+input::placeholder {
+    color: white;
 }
 
 .pokemons-name {
+    -webkit-text-stroke: 0.5px white;
     text-transform: capitalize;
     font-size: 25px;
-    font: bold;
+    font-weight: bold;
     display: flex;
     justify-content: center;
     font-family: 'Pokemon Solid', sans-serif;
-
 }
 
 .structure-card:hover {
     background-color: #ff9800;
+}
+
+@media only screen and (max-width: 1360px) {
+
+    .cards-container {
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        gap: 22px;
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .cards-container {
+        display: grid;
+        grid-template-columns: 300px 300px;
+        gap: 22px;
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .cards-container {
+        display: grid;
+        grid-template-columns: 300px;
+        gap: 22px;
+        justify-content: center;
+    }
+
 }
